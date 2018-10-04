@@ -1,0 +1,281 @@
+/*=========================================== 
+ * Global Styles
+ *===========================================*/
+
+html {
+    background: #fff;
+    color: #000000;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 14px;
+}
+
+html,
+button,
+input,
+textarea {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+    text-decoration: none;
+    color: #E3CDB1;
+}
+.btn {
+    display: inline-block;
+    background: #e2caae;
+    background: -webkit-linear-gradient(#e2caae, #c39f70);
+    background: linear-gradient(#e2caae, #c39f70);
+    border-bottom: 1px solid #a68861;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #715b3e;
+    text-transform: uppercase;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #e3dfda;
+    background: -webkit-linear-gradient(#e3dfda, #d0cbc4);
+    background: linear-gradient(#e3dfda, #d0cbc4);
+    border-bottom: 1px solid #b1aea8;
+    color: #7c7975;
+}
+.site-content {
+    margin: 0 2%;
+}
+
+/*=========================================== 
+ * Header Style
+ *===========================================*/
+
+.site-header {
+    position: relative;
+    z-index: 999;
+    background: #FFFFFF;
+    text-align: center;
+    padding: 1.5% 0 1.5% 2%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.site-header div{
+    display: inline-block;
+}
+.branding {
+    text-align: center;
+    outline: none;
+    float: left;
+    padding: 0 1.4%;
+    margin: 0.5% 1%;
+    border-right: 1px solid #e5e5e5 
+}
+/*@media rule to include a block of CSS properties only if a certain condition is true*/
+@media screen and (max-width: 1000px) {
+    .branding {
+        padding-left: 150px;
+    }
+}
+
+.branding .site-title {
+    color: #8f7655;
+    font-size: 14px;
+}
+.navigation{
+    width: 999px
+}
+.navigation .search {
+    float:  left;
+    margin:0.6% 1.5%;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px; 
+    padding:.5% 1.5%;
+    width: 50%;
+}
+.navigation .search form input{
+    list-style: none;
+    margin-right: 1.5%;
+    float: left;
+}
+.navigation .search form input[type="search"]{
+    background-color: #e5e5e5;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.navigation .login-signup{
+    width: 30%;
+
+}
+.navigation .login-signup ul{
+    margin: 5% 0;
+}
+.navigation .login-signup ul li{
+    list-style: none;
+    float: left;
+    text-align: center;
+    margin: 2% 2% 4% 2%;
+
+}
+.navigation .login-signup .askq{
+    margin-right: 20px;
+    color: #BDB0AC;
+}
+.navigation .login-signup ul li a{
+    color: #715b3e;
+    border-bottom: 1px solid #e5e5e5;
+    transition: .3s ease;
+}
+.navigation .login-signup ul li a:hover{
+    border-bottom-color: #8f7655;
+    border-width: 2px;
+}
+
+/*=========================================== 
+ * Main Content Styles
+ *===========================================*/
+.content{
+    padding: 30px 30px 50px 30px;
+}
+.content div{
+    display:inline-block;
+    overflow: hidden;
+}
+.content .main-content{
+    width: 70%;
+    min-height: 300px;
+    margin-bottom: 20px;
+    border-right: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.content .main-content .section-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #544531;
+    text-align: center;
+    overflow: hidden;
+}
+.content .main-content .question{
+    width: 95%;
+    height: 80px;
+    border-top: 1px solid #e5e5e5; 
+    display:block;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.content .main-content .question .question-title {
+    margin-bottom: 0;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+}
+ .content .main-content .question .question-title a{
+    color: #403D3D;
+}
+.content .main-content .question .question-title a:hover{
+    color: #344786;
+}
+.content .main-content .question .question-meta{
+    float: right;
+    color: #a59e95;
+    font-size: 12px;
+    text-transform: none;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.content .main-content .question .question-meta span{
+    padding: 2px 3px 2px 0;
+}
+.content .main-content .control-buttons{
+    padding-left: 35%;
+}
+.content .main-content .control-buttons .btn{
+    margin-right: 50px;
+    width: 100px;
+}
+
+/*=========================================== 
+ * Sidebar Styles
+ *===========================================*/
+ .sidebar{
+    position: absolute;
+    width: 30%;
+    height: 400px;
+    margin:20px 40px 20px 20px;
+    text-align: center;
+    overflow: hidden;
+ }
+ .sidebar .widget, .signup-login{
+    width: 90%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+}
+.sidebar .widget .widget-title {
+    color: #292621;
+    font-size: 18px;
+    border-bottom:  1px solid #e5e5e5;
+}
+.sidebar .widget a{
+    color: #585353;
+}
+.sidebar .widget a:hover{
+    color: #344786;
+}
+.sidebar .signup-login h3{
+    color: #292621;
+    font-size: 18px;
+    border-bottom:  1px solid #e5e5e5;
+}
+.sidebar .signup-login form div{
+    display:block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.sidebar .signup-login form div label{
+    float: left;
+    margin: 0 5% 0 15%;
+}
+.sidebar .signup-login form div input{
+    width: 70%;
+    float: left;
+    margin: 2% 5% 2% 15%;
+    border-radius: 5px;
+}
+.sidebar .signup-login form div button{
+    text-transform: none;
+}
+/*=========================================== 
+ * Hero Text Styles
+ *===========================================*/
+
+.hero h3, h5{
+    margin: 4% 9%;
+}
+
+/*=========================================== 
+ * Footer Styles
+ *===========================================*/
+ 
+ .footer{
+    height: 40px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 30px;
+ }
